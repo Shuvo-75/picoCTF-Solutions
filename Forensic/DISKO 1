@@ -1,0 +1,13 @@
+Problem Link : https://play.picoctf.org/practice/challenge/505
+
+Solution Step: 
+	1. Download file 
+	2. Move to the Download Location 
+	3. Identify the File Type (file filename.gz) 
+	4. Decompress the Archive (gunzip filename.gz) 
+	5. Verify the Extracted file (file filename) 
+	6. Pull Out The Exact Flag Format 
+		( strings filename | grep -oE 'picoCTF\{[^}]+\}' )
+	7. now you find flag
+		picoCTF{1t5_ju5t_4_5tr1n9_be6031da}
+
